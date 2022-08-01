@@ -1,13 +1,13 @@
 ---
-title: Admonitions
+title: Package Structure
 ---
 
-# Admonitions
+# Package Structure
 
 [[toc]]
 
 
-## Examples
+## Shazam MF
 
 The icons for the admonitions use Google Material Icons.
 

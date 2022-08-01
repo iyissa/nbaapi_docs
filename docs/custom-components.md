@@ -8,6 +8,19 @@ title: Custom Components
 
 <my-component/>
 
+### Sample Tutorials
+
+!!! danger Sample Tutorials
+The following tutorials and notebooks have been created to aid the usage of this notebook.
+- [ ] cool [Basics](https://github.com/swar/nba_api/blob/master/docs/examples/Basics.ipynb), typescript
+- [x] [Finding a Single Game](https://github.com/swar/nba_api/blob/master/docs/examples/Finding%20Games.ipynb)
+- [ ] Update the Blockchain notes repo.
+- [x] [Working with NBA live data](https://github.com/swar/nba_api/blob/master/docs/examples/LiveData.ipynb)
+- [x] update python script to probably with jinja based format and maybe latex output.
+- [ ] [Wrking with Play by Play](https://github.com/swar/nba_api/blob/master/docs/examples/PlayByPlay.ipynb), extend this app. and look at [How to Build a Vue.js Chat App with ChatEngine | PubNub](https://www.pubnub.com/tutorials/chatengine/vuejs/chat-app/)
+- [ ] Dash application to track ethereum stats and hashgraph
+!!!
+
 ### Table Component Code
 
 The code for table component is listed below

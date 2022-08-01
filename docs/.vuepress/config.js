@@ -22,18 +22,21 @@ module.exports = {
 		 'basketball',
      'diagrams',
 		 'charts-math',
-		 'custom-components'
+		 'custom-components',
+     'contact'
 	  ]
 	},
     sidebarDepth: 2,
     displayAllHeaders: true, // Default: false
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Admonitions', link: '/admonitions' },
-      { text: 'Basketball', link: '/basketball' },
-      { text: 'Diagrams', link: '/diagrams'},
-      { text: 'Charts And Math', link:'/charts-math'},
-	  { text: 'Custom Components', link: '/custom-components'}
+      { text: 'Package Structure', link: '/admonitions' },
+      { text: 'Static Module', link: '/basketball' },
+      { text: 'Parameters Module', link: '/diagrams'},
+      { text: 'Endpoints Module', link:'/charts-math'},
+      
+	  { text: 'Custom Components', link: '/custom-components'},
+    { text: 'Contact', link:'/contact'},
     ],
     lastUpdated: 'Last Updated', // string | boolean
       // Assumes GitHub. Can also be a full GitLab url.
