@@ -19,7 +19,8 @@ module.exports = {
 	  '/' : [
 	     '',
 		 'admonitions',
-		 'diagrams',
+		 'basketball',
+     'diagrams',
 		 'charts-math',
 		 'custom-components'
 	  ]
@@ -29,6 +30,7 @@ module.exports = {
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Admonitions', link: '/admonitions' },
+      { text: 'Basketball', link: '/basketball' },
       { text: 'Diagrams', link: '/diagrams'},
       { text: 'Charts And Math', link:'/charts-math'},
 	  { text: 'Custom Components', link: '/custom-components'}
@@ -54,8 +56,8 @@ module.exports = {
     editLinkText: 'Help us improve this page!'
 
   },
-  title: 'Vuepress Theme Cool Starter V1',
-  description: 'Simple Example project to get started with vuepress-theme-cool V1',
+  title: 'Documentation for NBA-API package',
+  description: 'This package is an API Client for www.nba.com',
   configureWebpack: {
     resolve: {
       alias: {

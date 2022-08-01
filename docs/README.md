@@ -1,36 +1,40 @@
 ---
 home: true
-actionText: Get Started →
+actionText: Use case example →
 actionLink: /custom-components/
+
 features:
-- title: Admonitions and Tables
-  details: Uses google material icons and sortable tables
-- title: Charts and Math
-  details: Leverage chartjs and katex 
-- title: Diagramming tools
+- title: Reason Mapped API Clients 
+  details: This is a package that works to take data from the NBA website in a simpler and more effective way than web scraping the website. 
+- title: Development Version
+  details: v1.1.11(Leverage chartjs and katex)
+- title: Endpoint Module
   details: Integrated with mermaid and plantuml
 footer: MIT Licensed | Copyright © 2019-present David Li
 ---
 
+### In comparison to web scraping the NBA website, this package works to extract data more quickly and efficiently ###
+
+## Installation
+
+To install:
+
+`pip install nba-api`
 
 ## Disclaimer
 
-This repo has installed `vuepress-theme-cool@1.3.1`
+This package is excellent work that has been done by [rforbes](https://pypi.org/user/rforbes/) and [swar](https://pypi.org/user/swar/)
+
+I am simply a technical writer seeking to make this documentation more accessible
+
+The Github repo can be found [here](https://github.com/swar/nba_api)
+
+Thank you :)
 
 [![Build Status](https://travis-ci.org/FriendlyUser/vuepress-theme-cool-starter.svg?branch=master)](https://travis-ci.org/FriendlyUser/vuepress-theme-cool-starter)
 ## ReadMe 
 
 This is an example of how to use the `vuepress-theme-cool` vuepress theme, look into docs for example files.
-
-## Installation and Running
-
-To install:
-
-`npm install`
-
-To run:
-
-`npm run docs:dev`
 
 
 ## Customization
