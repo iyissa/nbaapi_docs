@@ -32,9 +32,11 @@ This package represents outstanding work by [rforbes](https://pypi.org/user/rfor
 
 This documentation was created by [Ayo Yissa](https://iyissa.github.io/). 
 
-
+<!-- Shazam -->
 
 Thank you :)
 
 [![Build Status](https://travis-ci.org/FriendlyUser/vuepress-theme-cool-starter.svg?branch=master)](https://travis-ci.org/FriendlyUser/vuepress-theme-cool-starter)
+
+
 

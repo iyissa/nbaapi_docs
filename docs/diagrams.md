@@ -1,5 +1,5 @@
 ---
-title: Diagrams
+title: Parameter Module
 ---
 
 # Diagrams
