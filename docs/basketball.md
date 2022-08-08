@@ -2,350 +2,104 @@
 title: Static Module 
 ---
 
-Testing the markdown
+# Introduction
+All endpoints in this package always need either a ```player ID``` or ```team ID```. Both of these are gotten from the Static module.
 
+## Player ID
+You can find players using a regex pattern `case-insensitive` by full name, first name, last_name.
 
-<iframe width="100%" height="385" src="https://www.youtube.com/embed/MgvNxmmyDGs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-Vibes and inshallah season
+``` python 
+from nba_api.stats.static import players
 
----
-title: Diagrams
----
+# Find players by full name.
+players.find_players_by_full_name('')
 
-# Diagrams
+# Find players by first name.
+players.find_players_by_first_name('')
 
-List of diagrams possible with `vuepress-theme-cool`
-## Mermaid
+# Find players by last name.
+players.find_players_by_last_name('')
 
-
-```
-<mermaid>
-graph TD
-  A[Silvester] -->|Get money| B(Go shopping)
-  B --> C{Let me think}
-  C -->|One| D[Laptop]
-  C -->|Two| E[iPhone]
-  C -->|Three| F[Car]
-  C -->|Four| F[Mac]
-</mermaid>
+# Get all players.
+players.get_players()
 ```
 
-<mermaid>
-graph TD
-  A[Silvester] -->|Get money| B(Go shopping)
-  B --> C{Let me think}
-  C -->|One| D[Laptop]
-  C -->|Two| E[iPhone]
-  C -->|Three| F[Car]
-  C -->|Four| F[Mac]
-</mermaid>
+## Team ID
 
+You can find teams using regex patterns on fields such as full name, state, city, and nickname. As well as finding teams by year founded, abbreviation, and id.
 
-```js
-sequenceDiagram
-    Alice->>Bob: Hello Bob, how are you?
-    alt is sick
-        Bob->>Alice: Not so good :(
-    else is well
-        Bob->>Alice: Feeling fresh like a daisy
-    end
-    opt Extra response
-        Bob->>Alice: Thanks for asking
-    end
+```python
+from nba_api.stats.static import teams
+
+# Find teams by full name.
+teams.find_teams_by_full_name('cav')
+
+# Find teams by state.
+teams.find_teams_by_state('ohio')
+
+# Find teams by city.
+teams.find_teams_by_city('cleveland')
+
+# Find teams by team nickname.
+teams.find_teams_by_nickname('cav')
+
+# Find teams by year founded.
+teams.find_teams_by_year_founded(1968)
+
+# Find teams by abbreviation.
+teams.find_team_by_abbreviation('cle')
+
+# Find teams by id.
+teams.find_team_name_by_id(1610612739)
+
+# Get all teams.
+teams.get_teams()
 ```
 
-<mermaid>
-sequenceDiagram
-  Alice->>Bob: Hello Bob, how are you?
-  alt is sick
-      Bob->>Alice: Not so good :(
-  else is well
-      Bob->>Alice: Feeling fresh like a daisy
-  end
-  opt Extra response
-      Bob->>Alice: Thanks for asking
-  end
-</mermaid>
+## Accessing with the data
+You can retrieve the data in different formats. The availabale formats are `json`, a `dictionary`, a normalized `json` dictionary (`header:value` format), a normalized `dictionary`, and in a list of pandas `DataFrame`. 
 
-```js
-gantt
-section Section
-Completed :done,    des1, 2014-01-06,2014-01-08
-Active        :active,  des2, 2014-01-07, 3d
-Parallel 1   :         des3, after des1, 1d
-Parallel 2   :         des4, after des1, 1d
-Parallel 3   :         des5, after des3, 1d
-Parallel 4   :         des6, after des4, 1d
-```
-<mermaid>
-gantt
-section Section
-Completed :done,    des1, 2014-01-06,2014-01-08
-Active        :active,  des2, 2014-01-07, 3d
-Parallel 1   :         des3, after des1, 1d
-Parallel 2   :         des4, after des1, 1d
-Parallel 3   :         des5, after des3, 1d
-Parallel 4   :         des6, after des4, 1d
-</mermaid>
+```python
+# Returns the raw response of the request.
+.get_response()
 
+# Returns all data in a JSON string.
+.get_json()
 
-### Mermaid 8.4.3
+# Returns all data in a dictionary.
+.get_dict()
 
-Newer Versions of mermaid are required for these diagrams
+# Returns all data in a normalized JSON string.
+.get_normalized_json()
 
-```
-stateDiagram
-  [*] --> Still
-  Still --> [*]
-  Still --> Moving
-  Moving --> Still
-  Moving --> Crash
-  Crash --> [*]
+# Returns all data in a normalized dictionary.
+.get_normalized_dict()
+
+# Returns a list of all data in a pandas DataFrame structure.
+.get_data_frames()
 ```
 
-<mermaid>
-stateDiagram
-  [*] --> Still
-  Still --> [*]
-  Still --> Moving
-  Moving --> Still
-  Moving --> Crash
-  Crash --> [*]
-</mermaid>
+## Example
 
----
+### Finding Player ID.
 
-## PlantUml
+To get Lebron James' id
 
-```js
-@startuml
-Bob -> Alice : hello
-@enduml
+``` python 
+from nba_api.stats.static import players 
+
+lebron = players.find_players_by_full_name("Lebron James")
 ```
 
-@startuml
-Bob -> Alice : hello
-@enduml
+**Result:** ```[{'id': 2544,'full_name': 'LeBron James','first_name': 'LeBron','last_name': 'James','is_active': True}]```
 
-<br />
+### Finding Team ID.
 
-@startuml
-@startmindmap
-caption figure 1
-title My super title
+To get Golden State Warriors
 
-* <&flag>Debian
-** <&globe>Ubuntu
-*** Linux Mint
-*** Kubuntu
-*** Lubuntu
-*** KDE Neon
-** <&graph>LMDE
-** <&pulse>SolydXK
-** <&people>SteamOS
-** <&star>Raspbian with a very long name
-*** <s>Raspmbc</s> => OSMC
-*** <s>Raspyfi</s> => Volumio
-
-header
-My super header
-endheader
-
-center footer My super footer
-
-legend right
-  Short
-  legend
-endlegend
-@endmindmap
-@enduml
-
-```js
-@startuml
-node in as "input"
-node p as "Pre-processing"
-node fm as "Feature Mining"
-node fs as "Feature Selection"
-node fr as "Feature Reduction"
-node m as "Modelling"
-node a as "Accepted Results?"
-node pp as "Post-processing"
-node o as "Output"
-
-in -> p
-p ..> fm
-fm ..> fs
-fs ..> fr
-fr ..> m
-m ..> a
-a ..> fm : no
-a -> pp : yes
-pp -> o
-@enduml
 ```
+from nba_api.stats.static import teams
 
-@startuml
-  node in as "input"
-  node p as "Pre-processing"
-  node fm as "Feature Mining"
-  node fs as "Feature Selection"
-  node fr as "Feature Reduction"
-  node m as "Modelling"
-  node a as "Accepted Results?"
-  node pp as "Post-processing"
-  node o as "Output"
-
-  in -> p
-  p ..> fm
-  fm ..> fs
-  fs ..> fr
-  fr ..> m
-  m ..> a
-  a ..> fm : no
-  a -> pp : yes
-  pp -> o
-@enduml
-
-```js
-@startuml
-  |Required Steps|
-  :"Start Assignment";
-  |#AntiqueWhite|Documentation|
-  :Create Git Repo/Overleaf;
-  :Copy Down Questions;
-  |#LightBlue|Git|
-  :Initial Barebones Commit;
-  |Required Steps|
-  :"Answer Questions";
-  :"Submit Assignment";
-  |Git|
-  :"Update Local Repo";
-  :"Update CENG4B Notes;
-  stop
-@enduml
+teams.find_team_by_abbreviation('gsw')
 ```
-
-@startuml
-|Required Steps|
-:"Start Assignment";
-|#AntiqueWhite|Documentation|
-:Create Git Repo/Overleaf;
-:Copy Down Questions;
-|#LightBlue|Git|
-:Initial Barebones Commit;
-|Required Steps|
-:"Answer Questions";
-:"Submit Assignment";
-|Git|
-:"Update Local Repo";
-:"Update CENG4B Notes;
-stop
-@enduml
-
-```js
-  @startuml
- (*) --> [File System ] "input.json "
-  note left
-  1. Read Entire File into memory
-  end note
-  -->[Available Memory]"JSON data loaded in memory"
-  note left
-  2. Process file
-  in memory.
-  end note
-  note right
-  When loading a file into
-  memory to be parsed as
-  JSON or CSV, we’re limited
-  by the max string size
-  in Node.js: around 536 MB
-  as of Node v8
-  end note
-  --> [File System] "output.json"
-  note left
-  3. Write transform data back into system
-  end note
-  --> (*)
-  @enduml
-```
-
-@startuml
- (*) --> [File System ] "input.json "
-  note left
-  1. Read Entire File into memory
-  end note
-  -->[Available Memory]"JSON data loaded in memory"
-  note left
-  2. Process file
-  in memory.
-  end note
-  note right
-  When loading a file into
-  memory to be parsed as
-  JSON or CSV, we’re limited
-  by the max string size
-  in Node.js: around 536 MB
-  as of Node v8
-  end note
-  --> [File System] "output.json"
-  note left
-  3. Write transform data back into system
-  end note
-  --> (*)
-@enduml
-
-
-### Solidity Diagraph
-@startuml
-digraph foo {
-  node [style=rounded]
-  node1 [shape=box]
-  node2 [fillcolor=yellow, style="rounded,filled", shape=diamond]
-  node3 [shape=record, label="{ a | b | c }"]
-
-  node1 -> node2 -> node3
-}
-@enduml
-
-```js
-@startuml
-strict digraph cool {
-  exists [color=blue]
-  authenticate [color=blue]
-  require
-  create
-  UserCreated
-  destroy
-  UserDestroyed
-  get [color=blue]
-  authenticate -> require
-  create -> UserCreated
-  destroy -> require
-  destroy -> UserDestroyed
-  get -> require
-}
-@enduml
-```
-
-@startuml
-strict digraph cool {
-  exists [color=blue]
-  authenticate [color=blue]
-  require
-  create
-  UserCreated
-  destroy
-  UserDestroyed
-  get [color=blue]
-  authenticate -> require
-  create -> UserCreated
-  destroy -> require
-  destroy -> UserDestroyed
-  get -> require
-}
-@enduml
-
-### References
-
-- [Mermaid](https://github.com/knsv/mermaid)
-- [KaTeX](https://github.com/Khan/KaTeX)
+**Result:** ```{'id': 1610612744,'full_name': 'Golden State Warriors','abbreviation': 'GSW','nickname': 'Warriors','city': 'Golden State','state':'California','year_founded': 1946}```

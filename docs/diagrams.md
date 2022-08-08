@@ -7,6 +7,19 @@ title: Parameter Module
 List of diagrams possible with `vuepress-theme-cool`
 ## Mermaid
 
+The `Page` and `Screen` calls tell Segment what web page or mobile screen the user is on. This call automatically captures important context traits, so you don't have to manually implement and send this data.
+
+| **Page context** auto-captured | **Screen context** auto-captured                    |             |                                                                                                    |
+| ------------------------------ | --------------------------------------------------- | ----------- | -------------------------------------------------------------------------------------------------- |
+| **title**                      | *window.location.title*                             | **app**     | *build, name, namespace, version*                                                                  |
+| **url**                        | *window.location.url*                               | **device**  | *adTrackingEnabled, advertisingId (IDFA/AAID), device ID, manufacturer, model, type (android/ios)* |
+| **path**                       | *window.location.path*                              | **library** | *name, version*                                                                                    |
+| **referrer**                   | *window.document.referrer*                          | **locale**  | *window.document.referrer*                                                                         |
+| **search**                     | *window.location.search*                            | **network** | *cellular, wifi*                                                                                   |
+| **ip**                         | *address*                                           | **ip**      | address                                                                                            |
+| **userAgent**                  | *string*                                            | **os**      | name, version                                                                                      |
+| **campaign**                   | *utm_source, utm_medium, utm_campaign, utm_content* | **screen**  | height, width                                                                                      |
+
 
 ```
 <mermaid>

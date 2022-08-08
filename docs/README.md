@@ -3,12 +3,6 @@ home: true
 actionText: Use Case Examples →
 actionLink: /custom-components/
 
-features:
-- title: Authentication
-  details: None required
-- title: Development Version
-  details: v1.1.11
-
 footer: MIT Licensed | Copyright © 2019-present David Li
 ---
 
