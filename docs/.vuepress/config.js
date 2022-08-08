@@ -32,7 +32,7 @@ module.exports = {
       { text: 'Home', link: '/' },
       { text: 'Package Structure', link: '/admonitions' },
       { text: 'Static Module', link: '/basketball' },
-      { text: 'Parameters Module', link: '/diagrams'},
+      { text: 'Parameters Module1', link: '/diagrams'},
       { text: 'Endpoints Module', link:'/charts-math'},
       
 	  { text: 'Custom Components', link: '/custom-components'},

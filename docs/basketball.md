@@ -91,7 +91,10 @@ from nba_api.stats.static import players
 lebron = players.find_players_by_full_name("Lebron James")
 ```
 
-**Result:** ```[{'id': 2544,'full_name': 'LeBron James','first_name': 'LeBron','last_name': 'James','is_active': True}]```
+!!! success RESULT 
+```[{'id': 2544,'full_name': 'LeBron James','first_name': 'LeBron','last_name': 'James','is_active': True}]```
+!!!
+
 
 ### Finding Team ID.
 
@@ -102,4 +105,6 @@ from nba_api.stats.static import teams
 
 teams.find_team_by_abbreviation('gsw')
 ```
-**Result:** ```{'id': 1610612744,'full_name': 'Golden State Warriors','abbreviation': 'GSW','nickname': 'Warriors','city': 'Golden State','state':'California','year_founded': 1946}```
+!!! success RESULT 
+```{'id': 1610612744,'full_name': 'Golden State Warriors','abbreviation': 'GSW','nickname': 'Warriors','city': 'Golden State','state':'California','year_founded': 1946}```
+!!!
