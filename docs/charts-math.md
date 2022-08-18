@@ -13,7 +13,7 @@ Some of these do not have sample results included and you can use the contact pa
 
 ## All Time stats
 
-### AllTimeLeadersGrids
+## AllTimeLeadersGrids
 This Endpoint returns All time leaders for different stats in the NBA. 
 
 ``` python
