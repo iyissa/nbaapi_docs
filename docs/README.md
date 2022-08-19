@@ -8,7 +8,9 @@ footer: MIT Licensed | Copyright © 2019-present David Li
 
 ## Installation
 
-This package must be installed before it can be used. To install:
+This package must be installed before it can be used. 
+
+To install:
 
 `pip install nba-api`
 
