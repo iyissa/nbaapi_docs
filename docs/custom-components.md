@@ -2,13 +2,8 @@
 title: Custom Components
 ---
 
-# Custom Components
 
-## Tables
-
-<my-component/>
-
-### Sample Tutorials
+## Sample Tutorials
 
 !!! danger Sample Tutorials
 The following tutorials and notebooks have been created to aid the usage of this notebook.

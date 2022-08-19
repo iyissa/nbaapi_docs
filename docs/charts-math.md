@@ -13,7 +13,7 @@ Some of these do not have sample results included and you can use the contact pa
 
 ## All Time stats
 
-## AllTimeLeadersGrids
+### AllTimeLeadersGrids
 This Endpoint returns All time leaders for different stats in the NBA. 
 
 ``` python
@@ -145,6 +145,40 @@ alltime_stats.ast_leaders.get_json()
 ```
 
 <!-- I want to put an image here chief and I don't know how -->
+
+<!-- Endpoint name
+Endpoint description 
+Endpoint Installation 
+Endpoint Arguments [#### **Arguments**]
+Endpoint Parameters [#### Parameters]
+Endpoint Example [**Example:** ]
+Endpoint results [**Result:** ] -->
+
+## Common Player stats
+
+### CommonPlayerInfo
+
+## Draft stats
+
+### DraftHistory
+
+## Franchise stats
+
+### FranchiseLeaders
+
+## Leaders stats
+
+### LeadersTiles
+
+## Award stats
+
+### PlayerAwards
+
+### PlayerCompare
+
+## Team stats
+
+### Team Info
 
 
 
