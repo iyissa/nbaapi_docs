@@ -18,7 +18,7 @@ module.exports = {
     sidebar: { 
 	  '/' : [
 	     '',
-		 'admonitions',
+		//  'admonitions',
 		 'basketball',
      'diagrams',
 		 'charts-math',
@@ -30,12 +30,12 @@ module.exports = {
     displayAllHeaders: true, // Default: false
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Package Structure', link: '/admonitions' },
+      // { text: 'Package Structure', link: '/admonitions' },
       { text: 'Static Module', link: '/basketball' },
-      { text: 'Parameters Module1', link: '/diagrams'},
-      { text: 'Endpoints Module', link:'/charts-math'},
+      { text: 'Parameters', link: '/diagrams'},
+      { text: 'Endpoints', link:'/charts-math'},
       
-	  { text: 'Custom Components', link: '/custom-components'},
+	  { text: 'Examples and Tutorials', link: '/custom-components'},
     { text: 'Contact', link:'/contact'},
     ],
     lastUpdated: 'Last Updated', // string | boolean
