@@ -7,6 +7,8 @@ As of the time of the time of writing, there are currently 135 different stats t
 
 Each endpoint gives information about the data it returns, parameters that the endpoint takes and sample results. 
 
+* * * * *
+
 ### Note
 !!! tip Tip
 To get all the arguments that an endpoint can return, use `.expected_data.keys()`
@@ -25,11 +27,11 @@ This returns all the arguments the `commonplayerinfo` endpoint can take.
 dict_keys(['AvailableSeasons', 'CommonPlayerInfo', 'PlayerHeadlineStats'])
 ```
 
-::: danger WARNING
+<!-- ::: danger WARNING
 Some of these do not have sample results included and you can use the contact page to find avenues to get solutions to problems. 
-:::
+::: -->
 
- 
+------ 
 
 ## All Time stats
 
@@ -41,114 +43,30 @@ from nba_api.stats.endpoints import alltimeleadersgrids
 alltimeleadersgrids.AllTimeLeadersGrids()
 ```
 
-#### **Arguments**
-This package gives a short summary of what you can expect from each This module can take arguments to access data for the following. The stats, arguments to pass in. The results are shown in the block below each argument.
-
-
-*Assist Leaders*  `ast_leaders`
-```text
-['PLAYER_ID', 'PLAYER_NAME', 'AST', 'AST_RANK']
-```
-
-*Block Leaders* `blk_leaders`
-```text
-['PLAYER_ID', 'PLAYER_NAME', 'BLK', 'BLK_RANK']
-```
-
-*Defensive Rebound Leaders* `dreb_leaders`
-```text
-['PLAYER_ID', 'PLAYER_NAME', 'DREB', 'DREB_RANK']
-```
-
-*3 Point Field Goals Attempted Leaders* `fg3_a_leaders`
-```text
-['PLAYER_ID', 'PLAYER_NAME', 'FG3A', 'FG3A_RANK']
-```
-
-*3 Point Field Goals Made Leaders* `fg3_m_leaders`
-```text
-['PLAYER_ID', 'PLAYER_NAME', 'FG3M', 'FG3M_RANK']
-```
-*3 Point Field Goals Percentage Leaders* `fg3_pct_leaders`
-```text
-['PLAYER_ID', 'PLAYER_NAME', 'FG3_PCT', 'FG3_PCT_RANK']
-```
-
-*Field Goals Attempted Leaders* `fga_leaders`
-```text
-['PLAYER_ID', 'PLAYER_NAME', 'FGA', 'FGA_RANK']
-```
-
-*Field Goals Made Leaders* `fgm_leaders`
-```text
-['PLAYER_ID', 'PLAYER_NAME', 'FGM', 'FGM_RANK']
-```
-
-*Field Goals Percentage Leaders* `fg_pct_leaders`
-```text
-['PLAYER_ID', 'PLAYER_NAME', 'FG_PCT', 'FG_PCT_RANK']
-```
-
-*Free Throw Attempted Leaders* `fta_leaders`
-```text
-['PLAYER_ID', 'PLAYER_NAME', 'FTA', 'FTA_RANK']
-```
-
-*Free Throw Made Leaders* `ftm_leaders`
-```text
-['PLAYER_ID', 'PLAYER_NAME', 'FTM', 'FTM_RANK']
-```
-
-*Free Throw Percentage Leaders* `ft_pct_leaders`
-```text
-['PLAYER_ID', 'PLAYER_NAME', 'FT_PCT', 'FT_PCT_RANK']
-```
-
-*Games Played Leaders* `g_p_leaders`
-```text
-['PLAYER_ID', 'PLAYER_NAME', 'GP', 'GP_RANK']
-```
-
-*Offensive Rebound leaders* `oreb_leaders`
-```text
-['PLAYER_ID', 'PLAYER_NAME', 'OREB', 'OREB_RANK']
-```
-
-*Personal Foul Leaders*  `pf_leaders`
-```text
-['PLAYER_ID', 'PLAYER_NAME', 'PF', 'PF_RANK']
-```
-
-*Points Leaders* `pts_leaders`
-```text
-['PLAYER_ID', 'PLAYER_NAME', 'PTS', 'PTS_RANK']
-```
-
-*Rebound Leaders* `reb_leaders`
-```text
-['PLAYER_ID', 'PLAYER_NAME', 'REB', 'REB_RANK']
-```
-
-*Steal Leaders* `stl_leaders`
-```text
-['PLAYER_ID', 'PLAYER_NAME', 'STL', 'STL_RANK']
-```
-
-*Turnovers Leaders* `tov_leaders`
-```text
-['PLAYER_ID', 'PLAYER_NAME', 'TOV', 'TOV_RANK']
-```
-
-
-#### Parameters
-
-
-API Parameter Name | Python Parameter Variable | Pattern | Required | Nullable
+#### Query Parameters 
+API Parameter Name | Python Parameter Variable | Description | Required | Nullable
 ------------ | ------------ | :-----------: | :---: | :---:
-[_**LeagueID**_](https://github.com/swar/nba_api/blob/master/docs/nba_api/stats/library/parameters.md#LeagueID) | league_id |  | `Y` |  | 
-[_**PerMode**_](https://github.com/swar/nba_api/blob/master/docs/nba_api/stats/library/parameters.md#PerMode) | per_mode_simple |  | `Y` |  | 
-[_**SeasonType**_](https://github.com/swar/nba_api/blob/master/docs/nba_api/stats/library/parameters.md#SeasonType) | season_type |  | `Y` |  | 
-[_**TopX**_](https://github.com/swar/nba_api/blob/master/docs/nba_api/stats/library/parameters.md#TopX) | topx |  | `Y` |  | 
+[_**LeagueID**_](https://github.com/swar/nba_api/blob/master/docs/nba_api/stats/library/parameters.md#LeagueID) | league_id | Options include NBA, ABA, G league, WNBA. | `Yes` | Defaults to NBA. | 
+[_**PerMode**_](https://github.com/swar/nba_api/blob/master/docs/nba_api/stats/library/parameters.md#PerMode) | per_mode_simple | Options include total, per 36 minutes or per game  | `Yes` | Defaults to totals. | 
+[_**SeasonType**_](https://github.com/swar/nba_api/blob/master/docs/nba_api/stats/library/parameters.md#SeasonType) | season_type | Other options include regular Season or preseason. | `Yes` | Defaults to regular season. | 
+[_**TopX**_](https://github.com/swar/nba_api/blob/master/docs/nba_api/stats/library/parameters.md#TopX) | topx | No info available | `Yes` | No info available | 
+
+#### Arguments Taken
+``` text
+['ASTLeaders', 'BLKLeaders', 'DREBLeaders', 'FG3ALeaders', 'FG3MLeaders', 'FG3_PCTLeaders', 'FGALeaders', 'FGMLeaders', 'FG_PCTLeaders', 'FTALeaders', 'FTMLeaders', 'FT_PCTLeaders', 'GPLeaders', 'OREBLeaders', 'PFLeaders', 'PTSLeaders', 'REBLeaders', 'STLLeaders', 'TOVLeaders']
+```
+
+#### Response
+The response for each argument is shown below in key:value format
+
+```json 
+'{"ASTLeaders": ["PLAYER_ID", "PLAYER_NAME", "AST", "AST_RANK"], "BLKLeaders": ["PLAYER_ID", "PLAYER_NAME", "BLK", "BLK_RANK"], "DREBLeaders": ["PLAYER_ID", "PLAYER_NAME", "DREB", "DREB_RANK"], "FG3ALeaders": ["PLAYER_ID", "PLAYER_NAME", "FG3A", "FG3A_RANK"], "FG3MLeaders": ["PLAYER_ID", "PLAYER_NAME", "FG3M", "FG3M_RANK"], "FG3_PCTLeaders": ["PLAYER_ID", "PLAYER_NAME", "FG3_PCT", "FG3_PCT_RANK"], "FGALeaders": ["PLAYER_ID", "PLAYER_NAME", "FGA", "FGA_RANK"], "FGMLeaders": ["PLAYER_ID", "PLAYER_NAME", "FGM", "FGM_RANK"], "FG_PCTLeaders": ["PLAYER_ID", "PLAYER_NAME", "FG_PCT", "FG_PCT_RANK"], "FTALeaders": ["PLAYER_ID", "PLAYER_NAME", "FTA", "FTA_RANK"], "FTMLeaders": ["PLAYER_ID", "PLAYER_NAME", "FTM", "FTM_RANK"], "FT_PCTLeaders": ["PLAYER_ID", "PLAYER_NAME", "FT_PCT", "FT_PCT_RANK"], "GPLeaders": ["PLAYER_ID", "PLAYER_NAME", "GP", "GP_RANK"], "OREBLeaders": ["PLAYER_ID", "PLAYER_NAME", "OREB", "OREB_RANK"], "PFLeaders": ["PLAYER_ID", "PLAYER_NAME", "PF", "PF_RANK"], "PTSLeaders": ["PLAYER_ID", "PLAYER_NAME", "PTS", "PTS_RANK"], "REBLeaders": ["PLAYER_ID", "PLAYER_NAME", "REB", "REB_RANK"], "STLLeaders": ["PLAYER_ID", "PLAYER_NAME", "STL", "STL_RANK"], "TOVLeaders": ["PLAYER_ID", "PLAYER_NAME", "TOV", "TOV_RANK"]}'
+```
+
+
+
+
+
 
 **Example:** 
 
@@ -174,12 +92,13 @@ Endpoint Parameters [#### Parameters]
 Endpoint Example [**Example:** ]
 Endpoint results [**Result:** ] 
 
-#### **Description**
-#### **Query Parameters**
-#### **Examples**
-#### **Parameters Examples**
-#### **Response** 
-#### **Response fields**  -->
+#### Description
+#### Query Parameters
+#### Arguments Taken
+#### Response
+#### Response fields 
+#### example
+  -->
 
 ## Common Player stats
 
