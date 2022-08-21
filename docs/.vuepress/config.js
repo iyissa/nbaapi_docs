@@ -4,7 +4,7 @@ module.exports = {
     serviceWorker: true,
     updatePopup: true
   }],
-  base: '/vuepress-theme-cool-starter/',
+  base: '/nbaapi_docs/',
   theme: 'cool',
   //dest: 'dist',
   head: [
