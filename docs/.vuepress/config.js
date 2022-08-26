@@ -4,7 +4,7 @@ module.exports = {
     serviceWorker: true,
     updatePopup: true
   }],
-  base: '/nbaapi_docs/',
+  base: '/',
   theme: 'cool',
   //dest: 'dist',
   head: [
