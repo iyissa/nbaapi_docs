@@ -20,7 +20,7 @@ module.exports = {
 	     '',
 		//  'admonitions',
 		 'basketball',
-     'diagrams',
+    //  'diagrams',
 		 'charts-math',
 		 'custom-components',
      'contact'
@@ -32,7 +32,7 @@ module.exports = {
       { text: 'Home', link: '/' },
       // { text: 'Package Structure', link: '/admonitions' },
       { text: 'Static Module', link: '/basketball' },
-      { text: 'Parameters', link: '/diagrams'},
+      // { text: 'Parameters', link: '/diagrams'},
       { text: 'Endpoints', link:'/charts-math'},
       
 	  { text: 'Examples and Tutorials', link: '/custom-components'},
