@@ -6,6 +6,10 @@ actionLink: /custom-components/
 footer: MIT Licensed | Copyright © 2019-present David Li
 ---
 
+## Description 
+This Package makes it easier to access Basketball data from [NBA stats](https://www.nba.com/stats/)
+
+
 ## Installation
 
 This package must be installed before it can be used. 
@@ -14,12 +18,14 @@ To install:
 
 `pip install nba-api`
 
-
 ### Required and Optional Packages
 
 **Requests** -- `pip install requests`
 
 **Pandas** (optional) -- `pip install pandas`
+
+## Usage
+Each endpoint while using this package requires either a Player ID e.g `"Lebron James ID : 2544"` or a Team ID e.g `Golden State Warriors ID : 1610612744`. An explanation on getting the IDs for usage in your project can be gotten in the static module page. 
 
 
 ## Note
