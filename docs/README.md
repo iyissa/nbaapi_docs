@@ -7,7 +7,11 @@ footer: MIT Licensed | Copyright © 2019-present David Li
 ---
 
 ## Description 
-This Package makes it easier to access Basketball data from [NBA stats](https://www.nba.com/stats/)
+Nba-api is a free Python tool that downloads statistics from [Official NBA stats page](https://www.nba.com/stats/) and makes them accessible to python programs. 
+
+Nba-api is a wonderful resource for obtaining statistics on NBA teams, seasons, players, and games. This package includes methods for acquiring data for all of these categories in a variety of formats. Each method has its own set of valid queries that can be specified by the user.
+
+When trying to comprehend what is happening in the sport, statistics are helpful. They can also be utilized in projects involving machine learning and data analytics.
 
 ## Installation
 
