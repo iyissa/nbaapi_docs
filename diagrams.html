@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Parameter Module | Documentation for NBA-API package</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/faviconCustom.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="description" content="This package is an API Client for www.nba.com">
+    
+    <link rel="preload" href="/assets/css/0.styles.e0d530dc.css" as="style"><link rel="preload" href="/assets/js/app.fa6cae45.js" as="script"><link rel="preload" href="/assets/js/2.c28a915b.js" as="script"><link rel="preload" href="/assets/js/21.26335423.js" as="script"><link rel="preload" href="/assets/js/14.9d478cfe.js" as="script"><link rel="prefetch" href="/assets/js/10.a23af3a8.js"><link rel="prefetch" href="/assets/js/11.b2d703f3.js"><link rel="prefetch" href="/assets/js/12.ae04cd26.js"><link rel="prefetch" href="/assets/js/13.faed05bf.js"><link rel="prefetch" href="/assets/js/15.4b31ec66.js"><link rel="prefetch" href="/assets/js/16.714a65ca.js"><link rel="prefetch" href="/assets/js/17.8fdca2da.js"><link rel="prefetch" href="/assets/js/18.c5fb9673.js"><link rel="prefetch" href="/assets/js/19.4e1d73fa.js"><link rel="prefetch" href="/assets/js/20.84eaf488.js"><link rel="prefetch" href="/assets/js/22.93c0bff7.js"><link rel="prefetch" href="/assets/js/23.c54b04f4.js"><link rel="prefetch" href="/assets/js/3.3628ad31.js"><link rel="prefetch" href="/assets/js/4.77af4b95.js"><link rel="prefetch" href="/assets/js/5.5a2beed1.js"><link rel="prefetch" href="/assets/js/6.729adef7.js"><link rel="prefetch" href="/assets/js/7.b594a0fc.js"><link rel="prefetch" href="/assets/js/8.ef4d8d14.js"><link rel="prefetch" href="/assets/js/9.4b59b8f7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e0d530dc.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Documentation for NBA-API package</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/basketball.html" class="nav-link">
+  Static Module
+</a></div><div class="nav-item"><a href="/charts-math.html" class="nav-link">
+  Endpoints
+</a></div><div class="nav-item"><a href="/custom-components.html" class="nav-link">
+  Examples and Tutorials
+</a></div><div class="nav-item"><a href="/contact.html" class="nav-link">
+  Contact
+</a></div> <a href="https://github.com/FriendlyUser/vuepress-theme-cool-starter" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/basketball.html" class="nav-link">
+  Static Module
+</a></div><div class="nav-item"><a href="/charts-math.html" class="nav-link">
+  Endpoints
+</a></div><div class="nav-item"><a href="/custom-components.html" class="nav-link">
+  Examples and Tutorials
+</a></div><div class="nav-item"><a href="/contact.html" class="nav-link">
+  Contact
+</a></div> <a href="https://github.com/FriendlyUser/vuepress-theme-cool-starter" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">Home</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/#description" class="sidebar-link">Description</a></li><li class="sidebar-sub-header"><a href="/#installation" class="sidebar-link">Installation</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/#required-and-optional-packages" class="sidebar-link">Required and Optional Packages</a></li></ul></li><li class="sidebar-sub-header"><a href="/#usage" class="sidebar-link">Usage</a></li><li class="sidebar-sub-header"><a href="/#authentication" class="sidebar-link">Authentication</a></li><li class="sidebar-sub-header"><a href="/#note" class="sidebar-link">Note</a></li></ul></li><li><a href="/basketball.html" class="sidebar-link">Static Module</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/basketball.html#player-id" class="sidebar-link">Player ID</a></li><li class="sidebar-sub-header"><a href="/basketball.html#team-id" class="sidebar-link">Team ID</a></li><li class="sidebar-sub-header"><a href="/basketball.html#accessing-with-the-data" class="sidebar-link">Accessing with the data</a></li><li class="sidebar-sub-header"><a href="/basketball.html#example" class="sidebar-link">Example</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/basketball.html#finding-player-id" class="sidebar-link">Finding Player ID.</a></li><li class="sidebar-sub-header"><a href="/basketball.html#finding-team-id" class="sidebar-link">Finding Team ID.</a></li></ul></li></ul></li><li><a href="/charts-math.html" class="sidebar-link">Endpoints</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/charts-math.html#all-time-stats" class="sidebar-link">All Time stats</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/charts-math.html#alltimeleadersgrids" class="sidebar-link">AllTimeLeadersGrids</a></li></ul></li><li class="sidebar-sub-header"><a href="/charts-math.html#common-player-stats" class="sidebar-link">Common Player stats</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/charts-math.html#commonplayerinfo" class="sidebar-link">CommonPlayerInfo</a></li></ul></li><li class="sidebar-sub-header"><a href="/charts-math.html#draft-stats" class="sidebar-link">Draft stats</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/charts-math.html#drafthistory" class="sidebar-link">DraftHistory</a></li></ul></li><li class="sidebar-sub-header"><a href="/charts-math.html#franchise-stats" class="sidebar-link">Franchise stats</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/charts-math.html#franchiseleaders" class="sidebar-link">FranchiseLeaders</a></li></ul></li><li class="sidebar-sub-header"><a href="/charts-math.html#player-stats" class="sidebar-link">Player stats</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/charts-math.html#playerawards" class="sidebar-link">PlayerAwards</a></li><li class="sidebar-sub-header"><a href="/charts-math.html#playercareerstats" class="sidebar-link">PlayerCareerStats</a></li></ul></li><li class="sidebar-sub-header"><a href="/charts-math.html#team-stats" class="sidebar-link">Team stats</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/charts-math.html#team-info" class="sidebar-link">Team Info</a></li></ul></li></ul></li><li><a href="/custom-components.html" class="sidebar-link">Custom Components</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/custom-components.html#sample-tutorials" class="sidebar-link">Sample Tutorials</a></li></ul></li><li><a href="/contact.html" class="sidebar-link">Contact</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/contact.html#means-of-contact" class="sidebar-link">Means of Contact</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><p>The Paremeter Module.</p> <h1 id="omo"><a href="#omo" class="header-anchor">#</a> <strong>OMO!</strong></h1> <h1 id="diagrams"><a href="#diagrams" class="header-anchor">#</a> Diagrams</h1> <p>List of diagrams possible with <code>vuepress-theme-cool</code></p> <h2 id="mermaid"><a href="#mermaid" class="header-anchor">#</a> Mermaid</h2> <div class="language- extra-class"><pre class="language-text"><code>&lt;mermaid&gt;
+graph TD
+  A[Silvester] --&gt;|Get money| B(Go shopping)
+  B --&gt; C{Let me think}
+  C --&gt;|One| D[Laptop]
+  C --&gt;|Two| E[iPhone]
+  C --&gt;|Three| F[Car]
+  C --&gt;|Four| F[Mac]
+&lt;/mermaid&gt;
+</code></pre></div><div class="mermaid">
+graph TD
+  A[Silvester] --&gt;|Get money| B(Go shopping)
+  B --&gt; C{Let me think}
+  C --&gt;|One| D[Laptop]
+  C --&gt;|Two| E[iPhone]
+  C --&gt;|Three| F[Car]
+  C --&gt;|Four| F[Mac]
+</div> <div class="language-js extra-class"><pre class="language-js"><code>sequenceDiagram
+    Alice<span class="token operator">-</span><span class="token operator">&gt;&gt;</span>Bob<span class="token operator">:</span> Hello Bob<span class="token punctuation">,</span> how are you<span class="token operator">?</span>
+    alt is sick
+        Bob<span class="token operator">-</span><span class="token operator">&gt;&gt;</span>Alice<span class="token operator">:</span> Not so good <span class="token operator">:</span><span class="token punctuation">(</span>
+    <span class="token keyword">else</span> is well
+        Bob<span class="token operator">-</span><span class="token operator">&gt;&gt;</span>Alice<span class="token operator">:</span> Feeling fresh like a daisy
+    end
+    opt Extra response
+        Bob<span class="token operator">-</span><span class="token operator">&gt;&gt;</span>Alice<span class="token operator">:</span> Thanks <span class="token keyword">for</span> asking
+    end
+</code></pre></div><div class="mermaid">
+sequenceDiagram
+  Alice-&gt;&gt;Bob: Hello Bob, how are you?
+  alt is sick
+      Bob-&gt;&gt;Alice: Not so good :(
+  else is well
+      Bob-&gt;&gt;Alice: Feeling fresh like a daisy
+  end
+  opt Extra response
+      Bob-&gt;&gt;Alice: Thanks for asking
+  end
+</div> <div class="language-js extra-class"><pre class="language-js"><code>gantt
+section Section
+<span class="token literal-property property">Completed</span> <span class="token operator">:</span>done<span class="token punctuation">,</span>    des1<span class="token punctuation">,</span> <span class="token number">2014</span><span class="token operator">-</span><span class="token number">01</span><span class="token operator">-</span><span class="token number">06</span><span class="token punctuation">,</span><span class="token number">2014</span><span class="token operator">-</span><span class="token number">01</span><span class="token operator">-</span><span class="token number">08</span>
+<span class="token literal-property property">Active</span>        <span class="token operator">:</span>active<span class="token punctuation">,</span>  des2<span class="token punctuation">,</span> <span class="token number">2014</span><span class="token operator">-</span><span class="token number">01</span><span class="token operator">-</span><span class="token number">07</span><span class="token punctuation">,</span> 3d
+Parallel <span class="token number">1</span>   <span class="token operator">:</span>         des3<span class="token punctuation">,</span> after des1<span class="token punctuation">,</span> 1d
+Parallel <span class="token number">2</span>   <span class="token operator">:</span>         des4<span class="token punctuation">,</span> after des1<span class="token punctuation">,</span> 1d
+Parallel <span class="token number">3</span>   <span class="token operator">:</span>         des5<span class="token punctuation">,</span> after des3<span class="token punctuation">,</span> 1d
+Parallel <span class="token number">4</span>   <span class="token operator">:</span>         des6<span class="token punctuation">,</span> after des4<span class="token punctuation">,</span> 1d
+</code></pre></div><div class="mermaid">
+gantt
+section Section
+Completed :done,    des1, 2014-01-06,2014-01-08
+Active        :active,  des2, 2014-01-07, 3d
+Parallel 1   :         des3, after des1, 1d
+Parallel 2   :         des4, after des1, 1d
+Parallel 3   :         des5, after des3, 1d
+Parallel 4   :         des6, after des4, 1d
+</div> <h3 id="mermaid-8-4-3"><a href="#mermaid-8-4-3" class="header-anchor">#</a> Mermaid 8.4.3</h3> <p>Newer Versions of mermaid are required for these diagrams</p> <div class="language- extra-class"><pre class="language-text"><code>stateDiagram
+  [*] --&gt; Still
+  Still --&gt; [*]
+  Still --&gt; Moving
+  Moving --&gt; Still
+  Moving --&gt; Crash
+  Crash --&gt; [*]
+</code></pre></div><div class="mermaid">
+stateDiagram
+  [*] --&gt; Still
+  Still --&gt; [*]
+  Still --&gt; Moving
+  Moving --&gt; Still
+  Moving --&gt; Crash
+  Crash --&gt; [*]
+</div> <hr> <h2 id="plantuml"><a href="#plantuml" class="header-anchor">#</a> PlantUml</h2> <div class="language-js extra-class"><pre class="language-js"><code>@startuml
+Bob <span class="token operator">-</span><span class="token operator">&gt;</span> Alice <span class="token operator">:</span> hello
+@enduml
+</code></pre></div><img src="https://www.plantuml.com/plantuml/svg/SoWkIImgAStDuNBAJrBGjLDmpCbCJbMmKiX8pSd9vt98pKi1IW80" alt="uml diagram"> <br> <img src="https://www.plantuml.com/plantuml/svg/JL6vReGm4EtdAwPAGHEbtrX8OIkMh1IKAAs10Ipvaeya_7riZXMDvrsQiJsb3zo5g2IKAr923ufRwBaDmcWSnHGTuGi44IHXiw2FbXok5A30ozCe-SGgwWJNK6HXagOZzjb57M9I2hm97V-m4Jgij8udwuJhwehlP8ukZjkPtPhgkd4RfIVM6haCt_KkaR4oQO6ukhURbb_1FhYt-JxuAyAC77_8BIYDdb1pHUkmYrzJgkilpvxXAyDxsxoThMKKX_LbP5J20Cp41tBm-8QTanvs13tfa8pHc5mUmOq3I9fI69sOvW28xMnShfkS--oeJCUnYupJXlu1" alt="uml diagram"> <div class="language-js extra-class"><pre class="language-js"><code>@startuml
+node <span class="token keyword">in</span> <span class="token keyword">as</span> <span class="token string">&quot;input&quot;</span>
+node p <span class="token keyword">as</span> <span class="token string">&quot;Pre-processing&quot;</span>
+node fm <span class="token keyword">as</span> <span class="token string">&quot;Feature Mining&quot;</span>
+node fs <span class="token keyword">as</span> <span class="token string">&quot;Feature Selection&quot;</span>
+node fr <span class="token keyword">as</span> <span class="token string">&quot;Feature Reduction&quot;</span>
+node m <span class="token keyword">as</span> <span class="token string">&quot;Modelling&quot;</span>
+node a <span class="token keyword">as</span> <span class="token string">&quot;Accepted Results?&quot;</span>
+node pp <span class="token keyword">as</span> <span class="token string">&quot;Post-processing&quot;</span>
+node o <span class="token keyword">as</span> <span class="token string">&quot;Output&quot;</span>
+
+<span class="token keyword">in</span> <span class="token operator">-</span><span class="token operator">&gt;</span> p
+p <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token operator">&gt;</span> fm
+fm <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token operator">&gt;</span> fs
+fs <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token operator">&gt;</span> fr
+fr <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token operator">&gt;</span> m
+m <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token operator">&gt;</span> a
+a <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token operator">&gt;</span> fm <span class="token operator">:</span> no
+a <span class="token operator">-</span><span class="token operator">&gt;</span> pp <span class="token operator">:</span> yes
+pp <span class="token operator">-</span><span class="token operator">&gt;</span> o
+@enduml
+</code></pre></div><img src="https://www.plantuml.com/plantuml/svg/RP0n3i8m34NtdiBgtXw0ePI5hGB12QB4e4Xf4iNEmErnqaAfnFRy_xTZPoHMYVFi6W0V38Bre0XQwsFczYF6gbqJTZ45ZKJMFx_cOwxk6HNdX31PltDfvzxHeMOR_1P8ky0DJTu7bl6Je7E_arNLJrfZP3JIIDan7RUbrwq3yR-rGtKlcUkXeihbtG1HA4BV3tANe1nNcGhJmgbmgbmYIq89gRKF3l94hSl0AEKBom114K8peZVovMy0" alt="uml diagram"> <div class="language-js extra-class"><pre class="language-js"><code>@startuml
+  <span class="token operator">|</span>Required Steps<span class="token operator">|</span>
+  <span class="token operator">:</span><span class="token string">&quot;Start Assignment&quot;</span><span class="token punctuation">;</span>
+  <span class="token operator">|</span>#AntiqueWhite<span class="token operator">|</span>Documentation<span class="token operator">|</span>
+  <span class="token operator">:</span>Create Git Repo<span class="token operator">/</span>Overleaf<span class="token punctuation">;</span>
+  <span class="token operator">:</span>Copy Down Questions<span class="token punctuation">;</span>
+  <span class="token operator">|</span>#LightBlue<span class="token operator">|</span>Git<span class="token operator">|</span>
+  <span class="token operator">:</span>Initial Barebones Commit<span class="token punctuation">;</span>
+  <span class="token operator">|</span>Required Steps<span class="token operator">|</span>
+  <span class="token operator">:</span><span class="token string">&quot;Answer Questions&quot;</span><span class="token punctuation">;</span>
+  <span class="token operator">:</span><span class="token string">&quot;Submit Assignment&quot;</span><span class="token punctuation">;</span>
+  <span class="token operator">|</span>Git<span class="token operator">|</span>
+  <span class="token operator">:</span><span class="token string">&quot;Update Local Repo&quot;</span><span class="token punctuation">;</span>
+  <span class="token operator">:</span>&quot;Update <span class="token constant">CENG4B</span> Notes<span class="token punctuation">;</span>
+  stop
+@enduml
+</code></pre></div><img src="https://www.plantuml.com/plantuml/svg/RP31QW9138Rl-nHX-m1UUkfUt5sB5CHIHJoFRgg1tSauoLGAy_1cMa4elURF_-KZSr4NDKrZbJTuIHHnWArYa5ozrDkIGIj29p-XrxgfybFhbIu9zsTIp0i-ff8u9VPMwICwHLYImWO3pzw_C8xeFXkBE7p3WgyUFX9AsPU2Mz7fhDsOC5l926-UbDm8dOjuO8y2FKyJQVEVOElbYl41D46pJWVR_wFz2wztOIX-ApxQYMBuqxXF-zVryhc3DIkQcYY7Qev-iEVS0000" alt="uml diagram"> <div class="language-js extra-class"><pre class="language-js"><code>  @<span class="token function">startuml</span>
+ <span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token operator">--</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>File System <span class="token punctuation">]</span> <span class="token string">&quot;input.json &quot;</span>
+  note left
+  <span class="token number">1.</span> Read Entire File into memory
+  end note
+  <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token punctuation">[</span>Available Memory<span class="token punctuation">]</span><span class="token string">&quot;JSON data loaded in memory&quot;</span>
+  note left
+  <span class="token number">2.</span> Process file
+  <span class="token keyword">in</span> memory<span class="token punctuation">.</span>
+  end note
+  note right
+  When loading a file into
+  memory to be parsed <span class="token keyword">as</span>
+  <span class="token constant">JSON</span> or <span class="token constant">CSV</span><span class="token punctuation">,</span> we’re limited
+  by the max string size
+  <span class="token keyword">in</span> Node<span class="token punctuation">.</span>js<span class="token operator">:</span> around <span class="token number">536</span> <span class="token constant">MB</span>
+  <span class="token keyword">as</span> <span class="token keyword">of</span> Node v8
+  end note
+  <span class="token operator">--</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>File System<span class="token punctuation">]</span> <span class="token string">&quot;output.json&quot;</span>
+  note left
+  <span class="token number">3.</span> Write transform data back into system
+  end note
+  <span class="token operator">--</span><span class="token operator">&gt;</span> <span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span>
+  @enduml
+</code></pre></div><img src="https://www.plantuml.com/plantuml/svg/PP71JW8n54NtVCNDhDJ894eqneL1ZIvCGECaiY0itj0tK9ssfEsWkF8t_3s_n4S7JO1Tq_lEkxUt_H39nyRK7HmS7QBRlSBuNjUCOXKY6qoGQRjeOluQd4NM0QoBZ9ghAEUJ7CzC2dSsQiz8eBRHmR1nVYKJR5KYv2YxnzTBqZMLCZP84vFieNWSGb4ar8uKA-4tzAxPQOudxwOS0Yenafl_qNpRAL5Up-PhR3HdctPhEmCbD6KKgOKXUKl6WdmGUmeYf53EuxPuESOx_tnzo-jgRNHa9N8fp9nXw0CX-lNUe3ytWOPEiPHr2VAkaKXdlNCCRaIZ05Sb6SkBlMQsMfVINHF_Mj_jePTZv2K9eYSRAkTDsrz9qxUs_P2sx7l83tVwSYVV_Gi0" alt="uml diagram"> <h3 id="solidity-diagraph"><a href="#solidity-diagraph" class="header-anchor">#</a> Solidity Diagraph</h3> <img src="https://www.plantuml.com/plantuml/svg/FOyn3eCm34NtdCBAJ8UMEHNtG0m9DWN9n2W4jOXozwPjOB1aFVbzszKSROZBo0g7Hx1J3vq8R0h02nBKSroPJ9358s6JyJNntavadBmETeEw6vXROGbc9MPv5l2tTTQBxm2XJlndus17yMTgUQG6QYLW0MmTiT4RM7Y3IzN2hXjr7d6vvysvATMkAlAOlla0" alt="uml diagram"> <div class="language-js extra-class"><pre class="language-js"><code>@startuml
+strict digraph cool <span class="token punctuation">{</span>
+  exists <span class="token punctuation">[</span>color<span class="token operator">=</span>blue<span class="token punctuation">]</span>
+  authenticate <span class="token punctuation">[</span>color<span class="token operator">=</span>blue<span class="token punctuation">]</span>
+  require
+  create
+  UserCreated
+  destroy
+  UserDestroyed
+  <span class="token keyword">get</span> <span class="token punctuation">[</span>color<span class="token operator">=</span>blue<span class="token punctuation">]</span>
+  authenticate <span class="token operator">-</span><span class="token operator">&gt;</span> require
+  create <span class="token operator">-</span><span class="token operator">&gt;</span> UserCreated
+  destroy <span class="token operator">-</span><span class="token operator">&gt;</span> require
+  destroy <span class="token operator">-</span><span class="token operator">&gt;</span> UserDestroyed
+  get <span class="token operator">-</span><span class="token operator">&gt;</span> require
+<span class="token punctuation">}</span>
+@enduml
+</code></pre></div><img src="https://www.plantuml.com/plantuml/svg/VP312i8m44Jl-Ohz0Jz1AUWlU18FSJEqWTZePWEA-EzkMmzLYxUPDyCER5FKYzPpSaKbibA8hVXBHvnpeeSZmYqMBNJWdBAiJwdYQDHNxT1hPA_upWJN6WMcM62vYNs1R4SJp0NOMBw_-MvoOz92_owjDZ_N1xPu_hCyWqkZi-xJDUY3lUG5" alt="uml diagram"> <h3 id="references"><a href="#references" class="header-anchor">#</a> References</h3> <ul><li><a href="https://github.com/knsv/mermaid" target="_blank" rel="noopener noreferrer">Mermaid<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://github.com/Khan/KaTeX" target="_blank" rel="noopener noreferrer">KaTeX<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/FriendlyUser/vuepress-theme-cool-starter/edit/master/docs/diagrams.md" target="_blank" rel="noopener noreferrer">Help us improve this page!</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">9/12/2022, 10:54:47 AM</span></div></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.fa6cae45.js" defer></script><script src="/assets/js/2.c28a915b.js" defer></script><script src="/assets/js/21.26335423.js" defer></script><script src="/assets/js/14.9d478cfe.js" defer></script>
+  </body>
+</html>
