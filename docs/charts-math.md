@@ -63,10 +63,6 @@ The response for each argument is shown below in key:value format
 ```
 
 
-
-
-
-
 **Example:** 
 
 ``` python
@@ -98,6 +94,37 @@ Endpoint results [**Result:** ]
 #### Response fields 
 #### example
   -->
+
+### Assist Leaders 
+
+#### Description
+This Endpoint returns the assist leaders for seasons. It can return the leaders for either teams or players.
+
+``` python
+from nba_api.stats.endpoints import assistleaders
+assistleaders.AssistLeaders()
+```
+
+#### Query Parameters
+API Parameter Name | Python Parameter Variable | Description | Status | Nullable
+------------ | ------------ | :-----------: | :---: | :---:
+[_**LeagueID**_](https://github.com/swar/nba_api/blob/master/docs/nba_api/stats/library/parameters.md#LeagueID) | league_id | Options include NBA, ABA, G league, WNBA. | `Required` | Defaults to NBA. | 
+[_**PerMode**_](https://github.com/swar/nba_api/blob/master/docs/nba_api/stats/library/parameters.md#PerMode) | per_mode_simple | Options include total, per 36 minutes or per game  | `Required` | Defaults to total. | 
+[_**PlayerOrTeam**_](https://github.com/swar/nba_api/blob/master/docs/nba_api/stats/library/parameters.md#PlayerOrTeam) | player_or_team | Options to get results for either players or the team | `Required` | Defaults to team data | 
+[_**Season**_](https://github.com/swar/nba_api/blob/master/docs/nba_api/stats/library/parameters.md#Season) | season_year_nullable | Options include current season, current datetime, current year of season. | Optional | Defaults to current season |
+[_**SeasonType**_](https://github.com/swar/nba_api/blob/master/docs/nba_api/stats/library/parameters.md#SeasonType) | season_type_nullable | Other options include regular season or preseason. | Optional | `Yes` | 
+
+
+#### Arguments Taken
+This endpoint takes 
+
+#### Response
+#### Response fields 
+#### example
+
+
+
+
 
 ## Common Player stats
 
@@ -238,7 +265,7 @@ draft_df.get_json()
 
 
 #### Description
-This Endpoint gives the leaders in stats for a particular Franchise
+This Endpoint gives the leaders in stats for a particular franchise/team
 
 ```python
 from nba_api.stats.endpoints import franchiseleaders
