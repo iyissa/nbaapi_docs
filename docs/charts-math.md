@@ -116,12 +116,30 @@ API Parameter Name | Python Parameter Variable | Description | Status | Nullable
 
 
 #### Arguments Taken
-This endpoint takes 
+This endpoint returns the assist leaders for each season either by team points or assists  
 
 #### Response
-#### Response fields 
-#### example
+``` text 
+'{'AssistLeaders': ['RANK', 'TEAM_ID', 'TEAM_ABBREVIATION', 'TEAM_NAME', 'AST']}''
+```
 
+#### Example
+Getting the player assist leaders of 2019-20 season 
+
+``` python 
+from nba_api.stats.endpoints import assistleaders
+ast_leaders19_20 = assistleaders.AssistLeaders(season="2019-20", player_or_team="Player")
+ast_leaders19_20.get_data_frames()
+```
+
+**Result:**
+|    |   RANK |   PLAYER_ID | PLAYER         |    TEAM_ID | TEAM_ABBREVIATION   | TEAM_NAME              |   JERSEY_NUM | PLAYER_POSITION   |   AST |
+|---:|-------:|------------:|:---------------|-----------:|:--------------------|:-----------------------|-------------:|:------------------|------:|
+|  0 |      1 |        2544 | LeBron James   | 1610612747 | LAL                 | Los Angeles Lakers     |           23 | F                 |   684 |
+|  1 |      2 |      201937 | Ricky Rubio    | 1610612756 | PHX                 | Phoenix Suns           |           11 | G                 |   570 |
+|  2 |      3 |     1629027 | Trae Young     | 1610612737 | ATL                 | Atlanta Hawks          |           11 | G                 |   560 |
+|  3 |      4 |     1629029 | Luka Doncic    | 1610612742 | DAL                 | Dallas Mavericks       |           77 | F-G               |   538 |
+|  4 |      5 |      203081 | Damian Lillard | 1610612757 | POR                 | Portland Trail Blazers |            0 | G                 |   530 |
 
 
 
@@ -190,7 +208,7 @@ lebron_data.json()
 ```
 **Results:**
 
-```
+```json
  '{"resource": "commonplayerinfo", "parameters": [{"PlayerID": 2544}, {"LeagueID": null}], "resultSets": [{"name": "CommonPlayerInfo", "headers": ["PERSON_ID", "FIRST_NAME", "LAST_NAME", "DISPLAY_FIRST_LAST", "DISPLAY_LAST_COMMA_FIRST", "DISPLAY_FI_LAST", "PLAYER_SLUG", "BIRTHDATE", "SCHOOL", "COUNTRY", "LAST_AFFILIATION", "HEIGHT", "WEIGHT", "SEASON_EXP", "JERSEY", "POSITION", "ROSTERSTATUS", "GAMES_PLAYED_CURRENT_SEASON_FLAG", "TEAM_ID", "TEAM_NAME", "TEAM_ABBREVIATION", "TEAM_CODE", "TEAM_CITY", "PLAYERCODE", "FROM_YEAR", "TO_YEAR", "DLEAGUE_FLAG", "NBA_FLAG", "GAMES_PLAYED_FLAG", "DRAFT_YEAR", "DRAFT_ROUND", "DRAFT_NUMBER", "GREATEST_75_FLAG"], "rowSet": [[2544, "LeBron", "James", "LeBron James", "James, LeBron", "L. James", "lebron-james", "1984-12-30T00:00:00", "St. Vincent-St. Mary HS (OH)", "USA", "St. Vincent-St. Mary HS (OH)/USA", "6-9", "250", 19, "6", "Forward", "Active", "N", 1610612747, "Lakers", "LAL", "lakers", "Los Angeles", "lebron_james", 2003, 2022, "N", "Y", "Y", "2003", "1", "1", "Y"]]}, {"name": "PlayerHeadlineStats", "headers": ["PLAYER_ID", "PLAYER_NAME", "TimeFrame", "PTS", "AST", "REB", "PIE"], "rowSet": [[2544, "LeBron James", "2021-22", 30.3, 6.2, 8.2, 0.18]]}, {"name": "AvailableSeasons", "headers": ["SEASON_ID"], "rowSet": [["12003"], ["22003"], ["12004"], ["22004"], ["32004"], ["12005"], ["22005"], ["32005"], ["42005"], ["12006"], ["22006"], ["32006"], ["42006"], ["12007"], ["22007"], ["32007"], ["42007"], ["12008"], ["22008"], ["32008"], ["42008"], ["12009"], ["22009"], ["32009"], ["42009"], ["12010"], ["22010"], ["32010"], ["42010"], ["12011"], ["22011"], ["32011"], ["42011"], ["12012"], ["22012"], ["32012"], ["42012"], ["12013"], ["22013"], ["32013"], ["42013"], ["12014"], ["22014"], ["32014"], ["42014"], ["12015"], ["22015"], ["32015"], ["42015"], ["12016"], ["22016"], ["32016"], ["42016"], ["12017"], ["22017"], ["32017"], ["42017"], ["12018"], ["22018"], ["32018"], ["12019"], ["22019"], ["32019"], ["42019"], ["12020"], ["22020"], ["32020"], ["42020"], ["52020"], ["12021"], ["22021"], ["32021"]]}]}'
 ```
 
